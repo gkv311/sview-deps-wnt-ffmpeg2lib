@@ -231,3 +231,9 @@ FFEXPORT void av_packet_rescale_ts(AVPacket* pkt, AVRational tb_src, AVRational 
 FFEXPORT void av_free_packet(AVPacket* pkt) FFBODYVOID
 
 FFEXPORT int avcodec_copy_context(AVCodecContext *dest, const AVCodecContext *src) FFBODYNULL
+
+FFEXPORT AVCodecParameters* avcodec_parameters_alloc() FFBODYNULL
+FFEXPORT void avcodec_parameters_free(AVCodecParameters** par) FFBODYVOID
+FFEXPORT int avcodec_parameters_copy(AVCodecParameters* dst, const AVCodecParameters* src) FFBODYNULL
+FFEXPORT int avcodec_parameters_from_context(AVCodecParameters* par, const AVCodecContext* codec) FFBODYNULL
+FFEXPORT int avcodec_parameters_to_context(AVCodecContext* codec, const AVCodecParameters* par) FFBODYNULL

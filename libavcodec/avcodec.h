@@ -14,6 +14,7 @@ struct AVPanScan;
 struct AVFrame;
 struct AVCodecContext;
 struct AVCodec;
+struct AVCodecParameters;
 struct AVDictionary;
 struct AVHWAccel;
 struct AVPacket;

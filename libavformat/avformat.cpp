@@ -194,7 +194,7 @@ FFEXPORT int avio_close(AVIOContext* s) FFBODYNULL
 FFEXPORT int avio_open (AVIOContext** s, const char* url, int flags) FFBODYNULL
 FFEXPORT int avio_open2(AVIOContext** s, const char* url, int flags,
                         const AVIOInterruptCB* int_cb, AVDictionary** options) FFBODYNULL
-
+FFEXPORT const char* avio_enum_protocols(void** opaque, int output) FFBODYNULL
 
 FFEXPORT AVStream *avformat_new_stream(AVFormatContext *s, const AVCodec *c) FFBODYNULL
 FFEXPORT uint8_t* av_stream_new_side_data(AVStream* stream, enum AVPacketSideDataType type, int  size) FFBODYNULL
