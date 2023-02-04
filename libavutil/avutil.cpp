@@ -72,10 +72,6 @@ FFEXPORT int64_t av_frame_get_pkt_duration         (const AVFrame* frame) FFBODY
 FFEXPORT void    av_frame_set_pkt_duration         (AVFrame* frame, int64_t val) FFBODYVOID
 FFEXPORT int64_t av_frame_get_pkt_pos              (const AVFrame* frame) FFBODYNULL
 FFEXPORT void    av_frame_set_pkt_pos              (AVFrame* frame, int64_t val) FFBODYVOID
-FFEXPORT int64_t av_frame_get_channel_layout       (const AVFrame* frame) FFBODYNULL
-FFEXPORT void    av_frame_set_channel_layout       (AVFrame* frame, int64_t val) FFBODYVOID
-FFEXPORT int     av_frame_get_channels             (const AVFrame* frame) FFBODYNULL
-FFEXPORT void    av_frame_set_channels             (AVFrame* frame, int     val) FFBODYVOID
 FFEXPORT int     av_frame_get_sample_rate          (const AVFrame* frame) FFBODYNULL
 FFEXPORT void    av_frame_set_sample_rate          (AVFrame* frame, int     val) FFBODYVOID
 FFEXPORT AVDictionary* av_frame_get_metadata       (const AVFrame* frame) FFBODYNULL
@@ -126,3 +122,10 @@ FFEXPORT AVStereo3D *av_stereo3d_create_side_data(AVFrame* frame) FFBODYNULL
 FFEXPORT double av_display_rotation_get(const int32_t matrix[9]) FFBODYNULL
 FFEXPORT void av_display_rotation_set(int32_t matrix[9], double angle) FFBODYVOID
 FFEXPORT void av_display_matrix_flip(int32_t matrix[9], int hflip, int vflip) FFBODYVOID
+
+struct AVChannelLayout;
+FFEXPORT int64_t av_frame_get_channel_layout(const AVFrame* frame) FFBODYNULL
+FFEXPORT void    av_frame_set_channel_layout(AVFrame* frame, int64_t val) FFBODYVOID
+FFEXPORT int     av_frame_get_channels(const AVFrame* frame) FFBODYNULL
+FFEXPORT void    av_frame_set_channels(AVFrame* frame, int     val) FFBODYVOID
+FFEXPORT int     av_channel_layout_describe(const AVChannelLayout *channel_layout, char *buf, size_t buf_size) FFBODYNULL

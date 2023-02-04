@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="avdevice-58" />
+		<Option title="avdevice-59" />
 		<Option pch_mode="2" />
 		<Option compiler="windows_sdk_x86" />
 		<Build>
